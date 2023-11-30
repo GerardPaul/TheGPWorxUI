@@ -4,24 +4,26 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { ContactComponent } from './contact/contact.component';
-import { HeaderComponent } from './header/header.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { FooterComponent } from './footer/footer.component';
+import { MainLayoutComponent } from './shared/layouts/main/main-layout/main-layout.component';
+import { MainHeaderComponent } from './shared/layouts/main/main-header/main-header.component';
+import { MainFooterComponent } from './shared/layouts/main/main-footer/main-footer.component';
+import { HomeComponent } from './views/main/home/home.component';
+import { ProjectsComponent } from './views/main/projects/projects.component';
+import { AboutComponent } from './views/main/about/about.component';
+import { ContactComponent } from './views/main/contact/contact.component';
+import { DashboardComponent } from './views/admin/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    MainLayoutComponent,
+    MainHeaderComponent,
+    MainFooterComponent,
     HomeComponent,
-    AboutComponent,
     ProjectsComponent,
+    AboutComponent,
     ContactComponent,
-    HeaderComponent,
-    SidebarComponent,
-    FooterComponent
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
