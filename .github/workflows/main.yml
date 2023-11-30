@@ -22,8 +22,7 @@ jobs:
       run: npm install
 
     - name: Build Production App
-      run: npm run build --configuration production --base-href "https://GerardPaul.github.io/GerardPaul.github.io"
-      # Replace <repository-name> with the name of your GitHub repository
+      run: npm run build:prod
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@4.1.4
