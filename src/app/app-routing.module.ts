@@ -5,8 +5,14 @@ import { HomeComponent } from './views/main/home/home.component';
 import { ProjectsComponent } from './views/main/projects/projects.component';
 import { AboutComponent } from './views/main/about/about.component';
 import { ContactComponent } from './views/main/contact/contact.component';
+import { LoginComponent } from './views/components/login/login.component';
+import { AdminLayoutComponent } from './shared/layouts/admin/admin-layout/admin-layout.component';
+import { DashboardComponent } from './views/admin/dashboard/dashboard.component';
 
 const routes: Routes = [
+  {
+    path: 'login', component: LoginComponent
+  },
   {
     path: '', component: MainLayoutComponent,
     children: [
@@ -32,7 +38,19 @@ const routes: Routes = [
       },
     ]
   },
-
+  {
+    path: 'admin', component: AdminLayoutComponent,
+    children: [
+      {
+        path: '',
+        component: DashboardComponent
+      },
+      {
+        path: 'dashboard',
+        component: DashboardComponent
+      }
+    ]
+  },
 ];
 
 @NgModule({

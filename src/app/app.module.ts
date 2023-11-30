@@ -12,6 +12,11 @@ import { ProjectsComponent } from './views/main/projects/projects.component';
 import { AboutComponent } from './views/main/about/about.component';
 import { ContactComponent } from './views/main/contact/contact.component';
 import { DashboardComponent } from './views/admin/dashboard/dashboard.component';
+import { LoginComponent } from './views/components/login/login.component';
+import { AdminLayoutComponent } from './shared/layouts/admin/admin-layout/admin-layout.component';
+import { AdminHeaderComponent } from './shared/layouts/admin/admin-header/admin-header.component';
+import { AdminSidebarComponent } from './shared/layouts/admin/admin-sidebar/admin-sidebar.component';
+import { AdminFooterComponent } from './shared/layouts/admin/admin-footer/admin-footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +28,12 @@ import { DashboardComponent } from './views/admin/dashboard/dashboard.component'
     ProjectsComponent,
     AboutComponent,
     ContactComponent,
-    DashboardComponent
+    DashboardComponent,
+    LoginComponent,
+    AdminLayoutComponent,
+    AdminHeaderComponent,
+    AdminSidebarComponent,
+    AdminFooterComponent
   ],
   imports: [
     BrowserModule,
