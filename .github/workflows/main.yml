@@ -22,7 +22,7 @@ jobs:
       run: npm install
 
     - name: Build Production App
-      run: ng build --configuration production --base-href "https://GerardPaul.github.io/GerardPaul.github.io"
+      run: npm run build --configuration production --base-href "https://GerardPaul.github.io/GerardPaul.github.io"
       # Replace <repository-name> with the name of your GitHub repository
 
     - name: Deploy to GitHub Pages
